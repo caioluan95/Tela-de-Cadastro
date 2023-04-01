@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Assets/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Quer acessar o sistema? Então cadastre-se!</h1>
+        <form id="register_form">
+            <div class="full_div">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-required data-min-length="3" data-email-validate>            
+            </div>
+            <div class="half_div space">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16" data-only-letters>            
+            </div>
+            <div class="half_div">
+                <label for="surname">Sobrenome</label>
+                <input type="text" name="surname" id="surname" placeholder="Digite seu sobrenome" data-min-length="3" data-max-length="16" data-only-letters>            
+            </div>
+            <div class="half_div space">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha" data-required data-password-check>            
+            </div>
+            <div class="half_div">
+                <label for="password_confirm">Confirmar Senha</label>
+                <input type="password" name="password_confirm" id="password_confirm" placeholder="Confirme sua senha" data-required data-same="password">            
+            </div>
+            <div class="full_div">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="email" id="terms">Li e concordo com os <a href="#">termos de uso</a></label>            
+            </div>
+            <div class="full_div">
+                <input type="submit" id="submit_button" value="Cadastrar">            
+            </div>
+        </form>
+    </div>
+    <p class="validation_error template"></p>
+    <script src="/Assets/script.js"></script>
+</body>
+</html>

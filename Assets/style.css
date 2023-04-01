@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Abel', sans-serif;
+    color: black;
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+    input:focus, label:focus {
+        outline:none;
+    }
+
+a {
+    color: rgb(11, 79, 11)
+}
+
+body {
+    padding-top: 10vh;
+    background-image: url(/Assets/Imagens/allianz-parque.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+    #container h1 {
+        margin-bottom: 25px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full_div {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half_div {
+    flex: 1 1 45%;
+    position: relative;
+}
+
+    .space {
+        margin-right: 2.3%;
+    }
+
+label {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+input {
+    font-size: 1rem;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    margin-bottom: 40px;
+}
+
+    input:focus {
+        border-color: rgb(19, 120, 19);
+    }
+
+    input[type="submit"] {
+        background: linear-gradient(to bottom right, #1d5614, #20bd08);
+        border: 0;
+        border-radius: 12px;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bolder;
+        line-height: 2.5;
+        outline: transparent;
+        padding: 0 1rem;
+        text-align: center;
+        text-decoration: none;
+        transition: box-shadow .2s ease-in-out;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+    }
+
+        input[type="submit"]:not([disabled]):focus {
+            box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+        }
+
+        input[type="submit"]:not([disabled]):hover {
+            box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+        }
+
+#agreement {
+    margin-right: 5px;
+}
+
+    #agreement, #terms {
+        display: inline-block;
+        width: auto;
+    }
+
+.validation_error {
+    color: red;
+    position: absolute;
+    font-size: .7rem;
+    top: 55px;
+    padding-top: 5px;
+}
+
+.template {
+    display: none;
+}
